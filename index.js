@@ -3,7 +3,7 @@ const { readdirSync } = require('fs');
 const db = require('quick.db');
 const colors = require('colors');
 
-const config = require('./config_exemple.json');
+const config = require('../config_exemple.json');
 
 const client = new Client({
     intents: Object.keys(Intents.FLAGS)
