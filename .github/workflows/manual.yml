@@ -1,0 +1,11 @@
+name: ArgoBot
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    steps:
+    - name: Updating files & folders
+      run: echo "npm install && pm2 reload index.js"
