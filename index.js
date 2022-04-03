@@ -3,15 +3,18 @@ const { readdirSync } = require('fs');
 const db = require('quick.db');
 const colors = require('colors');
 
-const config = require('../config_exemple.json');
+const config = require('./config.json');
 
 const client = new Client({
-    intents: Object.keys(Intents.FLAGS)
+    intents: Object.keys(Intents.FLAGS),
+    partials: ['MESSAGE', 'CHANNEL', 'REACTION']
 })
 client.login(config.token)
 
 client.commands = new Collection()
 client.aliases = new Collection()
+
+client.invites = new Collection()
 
 client.on('ready', async (client) => {
   const bot_settings = db.get(`bot_settings_${client.user.id}`)
@@ -102,7 +105,7 @@ client.on('ready', async (client) => {
                 if(!user) return message.channel.send({ content: `:x: - ${message.author} user is invalid.`})
 
                 message.channel.send({ content: `:confetti_ball: - ${message.author} you come to enabled the license of **${client.user.tag}** (:crown: > ${user})`})
-                await db.set(`bot_settings_${client.user.id}`, [`enable`, `${client.user.id}`, `${user.id}`])
+                await db.set(`bot_settings_${client.user.id}`, [`enable`, `${client.user.id}`, `${user.id}`, `${message.guild.id}`])
                 await db.set(`starting_channel`, message.channel.id)
                 setTimeout(async () => {
                   await process.exit(0)
@@ -438,6 +441,9 @@ client.on('ready', async (client) => {
       loadEvents();
       
       console.log(`---------------`.bold.black)
+
+      const readyEvent = require(`./events/client/ready.js`)
+      await readyEvent.execute(client)
     }
   }
 })
