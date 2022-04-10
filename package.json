@@ -17,5 +17,23 @@
     "request-promise": "^4.2.6",
     "util": "^0.12.4",
     "weather-js": "^2.0.0"
-  }
+  },
+  "name": "argobot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BouletteDeSheet/ArgoBot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BouletteDeSheet/ArgoBot/issues"
+  },
+  "homepage": "https://github.com/BouletteDeSheet/ArgoBot#readme",
+  "description": ""
 }
