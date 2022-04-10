@@ -179,7 +179,7 @@ execute: async (client, message, args) => {
                         },
                         {
                             name: `↬ Activité(s) utilisateur`,
-                            value: `> Status: **${statuses[member.presence.status]}**\n> Divertissement: **${activity}**\n> Status personnalisé: **${cState}**`
+                            value: `> Status: **${statuses[member.presence.status]}**\n> Divertissement: ${activity}\n> Status personnalisé: **${cState}**`
                         },
                         {
                             name: `↬ Informations serveur`,

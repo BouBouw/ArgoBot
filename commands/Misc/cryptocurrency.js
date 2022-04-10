@@ -45,10 +45,6 @@ execute: async (client, message, args) => {
                                 value: `${link}`
                             },
                             {
-                                name: `Adresse`,
-                                value: `\`${data.platforms.ethereum}\``
-                            },  
-                            {
                                 name: `Prix`,
                                 value: `EUR ⇾ **${data.market_data.current_price.eur}** €\n USD ⇾ **${data.market_data.current_price.usd}** $`,
                                 inline: true
@@ -92,11 +88,7 @@ execute: async (client, message, args) => {
                             {
                                 name: `Website`,
                                 value: `${link}`
-                            },
-                            {
-                                name: `Adress`,
-                                value: `\`${data.platforms.ethereum}\``
-                            },  
+                            }, 
                             {
                                 name: `Price`,
                                 value: `EUR ⇾ **${data.market_data.current_price.eur}** €\n USD ⇾ **${data.market_data.current_price.usd}** $`,

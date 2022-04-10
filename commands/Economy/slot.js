@@ -36,12 +36,7 @@ execute: async (client, message, args) => {
                 content: `${message.author},\nLancement de la slot-machine...`,
                 embeds: [{
                     color: `#f5f540`,
-                    description: 
-                    `
-                    🟦 | ${final1} | ${final2} | ${final3} |
-                    ▶️ | ${final4} | ${final5} | ${final6} |
-                    🟦 | ${final7} | ${final8} | ${final9} |
-                    `
+                    description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                 }]
             }).then(async (msg) => {
                 if(final4 ===  '💰' && final5 ===  '💰' && final6 === '💰') {
@@ -49,12 +44,7 @@ execute: async (client, message, args) => {
                         content: `${message.author}, \n💰 **JACKPOT** ! Vous venez de recevoir **500 coins**`,
                         embeds: [{
                             color: `#f5f540`,
-                            description: 
-                            `
-                            🟦 | ${final1} | ${final2} | ${final3} |
-                            ▶️ | ${final4} | ${final5} | ${final6} |
-                            🟦 | ${final7} | ${final8} | ${final9} |
-                            `
+                            description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                         }]
                     }).then(async () => {
                         await db.add(`guild_${message.guild.id}_users_${message.author.id}_coins`, 500)
@@ -70,12 +60,7 @@ execute: async (client, message, args) => {
                         content: `${message.author}, \n🍀 **CHANCEUX** ! Vous venez de recevoir **100 coins**`,
                         embeds: [{
                             color: `#f5f540`,
-                            description: 
-                            `
-                            🟦 | ${final1} | ${final2} | ${final3} |
-                            ▶️ | ${final4} | ${final5} | ${final6} |
-                            🟦 | ${final7} | ${final8} | ${final9} |
-                            `
+                            description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                         }]
                     }).then(async () => {
                         await db.add(`guild_${message.guild.id}_users_${message.author.id}_coins`, 50)
@@ -91,12 +76,7 @@ execute: async (client, message, args) => {
                         content: `${message.author}, \n💎 **FANTASTIQUE** ! Vous venez de recevoir **150 coins**`,
                         embeds: [{
                             color: `#f5f540`,
-                            description: 
-                            `
-                            🟦 | ${final1} | ${final2} | ${final3} |
-                            ▶️ | ${final4} | ${final5} | ${final6} |
-                            🟦 | ${final7} | ${final8} | ${final9} |
-                            `
+                            description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                         }]
                     }).then(async () => {
                         await db.add(`guild_${message.guild.id}_users_${message.author.id}_coins`, 150)
@@ -112,12 +92,7 @@ execute: async (client, message, args) => {
                         content: `${message.author}, \n🪙 **RICHESSE** ! Vous venez de recevoir **50 coins**`,
                         embeds: [{
                             color: `#f5f540`,
-                            description: 
-                            `
-                            🟦 | ${final1} | ${final2} | ${final3} |
-                            ▶️ | ${final4} | ${final5} | ${final6} |
-                            🟦 | ${final7} | ${final8} | ${final9} |
-                            `
+                            description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                         }]
                     }).then(async () => {
                         await db.add(`guild_${message.guild.id}_users_${message.author.id}_coins`, 50)
@@ -133,12 +108,7 @@ execute: async (client, message, args) => {
                         content: `${message.author}, \n**DOMMAGE** vous venez de perdre **15 coins**`,
                         embeds: [{
                             color: `#f5f540`,
-                            description: 
-                            `
-                            🟦 | ${final1} | ${final2} | ${final3} |
-                            ▶️ | ${final4} | ${final5} | ${final6} |
-                            🟦 | ${final7} | ${final8} | ${final9} |
-                            `
+                            description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                         }]
                     }).then(async () => {
                         await db.subtract(`guild_${message.guild.id}_users_${message.author.id}_coins`, 15)
@@ -163,12 +133,7 @@ execute: async (client, message, args) => {
                 content: `${message.author},\nLaunch of the slot machine...`,
                 embeds: [{
                     color: `#f5f540`,
-                    description: 
-                    `
-                    🟦 | ${final1} | ${final2} | ${final3} |
-                    ▶️ | ${final4} | ${final5} | ${final6} |
-                    🟦 | ${final7} | ${final8} | ${final9} |
-                    `
+                    description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                 }]
             }).then(async (msg) => {
                 if(final4 ===  '💰' && final5 ===  '💰' && final6 === '💰') {
@@ -176,12 +141,7 @@ execute: async (client, message, args) => {
                         content: `${message.author}, \n💰 **JACKPOT**! You have just received **500 coins**`,
                         embeds: [{
                             color: `#f5f540`,
-                            description: 
-                            `
-                            🟦 | ${final1} | ${final2} | ${final3} |
-                            ▶️ | ${final4} | ${final5} | ${final6} |
-                            🟦 | ${final7} | ${final8} | ${final9} |
-                            `
+                            description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                         }]
                     }).then(async () => {
                         await db.add(`guild_${message.guild.id}_users_${message.author.id}_coins`, 500)
@@ -197,12 +157,7 @@ execute: async (client, message, args) => {
                         content: `${message.author}, \n🍀 **FORTUNATE** ! You have just received **100 coins**`,
                         embeds: [{
                             color: `#f5f540`,
-                            description: 
-                            `
-                            🟦 | ${final1} | ${final2} | ${final3} |
-                            ▶️ | ${final4} | ${final5} | ${final6} |
-                            🟦 | ${final7} | ${final8} | ${final9} |
-                            `
+                            description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                         }]
                     }).then(async () => {
                         await db.add(`guild_${message.guild.id}_users_${message.author.id}_coins`, 50)
@@ -218,12 +173,7 @@ execute: async (client, message, args) => {
                         content: `${message.author}, \n💎 **FANTASTIC** ! You have just received **150 coins**`,
                         embeds: [{
                             color: `#f5f540`,
-                            description: 
-                            `
-                            🟦 | ${final1} | ${final2} | ${final3} |
-                            ▶️ | ${final4} | ${final5} | ${final6} |
-                            🟦 | ${final7} | ${final8} | ${final9} |
-                            `
+                            description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                         }]
                     }).then(async () => {
                         await db.add(`guild_${message.guild.id}_users_${message.author.id}_coins`, 150)
@@ -239,12 +189,7 @@ execute: async (client, message, args) => {
                         content: `${message.author}, \n🪙 **RICHNESS** ! You have just received **50 coins**`,
                         embeds: [{
                             color: `#f5f540`,
-                            description: 
-                            `
-                            🟦 | ${final1} | ${final2} | ${final3} |
-                            ▶️ | ${final4} | ${final5} | ${final6} |
-                            🟦 | ${final7} | ${final8} | ${final9} |
-                            `
+                            description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                         }]
                     }).then(async () => {
                         await db.add(`guild_${message.guild.id}_users_${message.author.id}_coins`, 50)
@@ -260,12 +205,7 @@ execute: async (client, message, args) => {
                         content: `${message.author}, \n**DAMAGE** you just lost **15 coins**`,
                         embeds: [{
                             color: `#f5f540`,
-                            description: 
-                            `
-                            🟦 | ${final1} | ${final2} | ${final3} |
-                            ▶️ | ${final4} | ${final5} | ${final6} |
-                            🟦 | ${final7} | ${final8} | ${final9} |
-                            `
+                            description: `🟦 | ${final1} | ${final2} | ${final3} |\n▶️ | ${final4} | ${final5} | ${final6} |\n🟦 | ${final7} | ${final8} | ${final9} |`
                         }]
                     }).then(async () => {
                         await db.subtract(`guild_${message.guild.id}_users_${message.author.id}_coins`, 15)

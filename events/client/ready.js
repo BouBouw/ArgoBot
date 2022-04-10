@@ -117,7 +117,7 @@ module.exports = {
 		}
 
 		async function updateSatut() {
-			const { Client, Collection, Intents, MessageActionRow, MessageSelectMenu, MessageButton } = require('discord.js');
+			const { Client, Intents } = require('discord.js');
 			const bot = new Client({
 				intents: Object.keys(Intents.FLAGS),
 				partials: ['MESSAGE', 'CHANNEL', 'REACTION']
@@ -209,88 +209,9 @@ module.exports = {
 
 		async function startWebServer() {
 			const Dashboard = require("../../dashboard/dashboard");
-
 			Dashboard(client)
 
 			console.log(`[!] Starting server web on: http://185.142.53.79:8080/client/${client.user.id}`.bold.yellow)
-			const http = require('http');
-			var fs = require('fs');
-
-			switch(arr[0]) {
-				case 'FR_fr': {
-					http.createServer(async function (req, res) {
-						async function alertPage() {
-							let html = ``;
-							fs.readFile(`./website/FR_fr/alert.html`, 'utf8', (err, data) => {
-								if(err) {
-									console.log(err)
-								} else {
-									html = `${data}`
-									
-										res.writeHead(200, {
-											'Content-Type': 'text/html',
-											'Content-Length': html.length,
-											'Expires': new Date().toUTCString()
-										});
-										 res.end(data)
-								}
-							})
-						}
-
-                        if (req.url == `/client/${client.user.id}`) {
-                            let html = ``;
-                            fs.readFile(`./website/FR_fr/index.html`, 'utf8', (err, data) => {
-                                if(err) {
-                                    console.log(err)
-                                } else {
-                                    html = `${data}`
-                                    
-                                        res.writeHead(200, {
-                                            'Content-Type': 'text/html',
-                                            'Content-Length': html.length,
-                                            'Expires': new Date().toUTCString()
-                                        });
-                                         res.end(data)
-                                }
-                            })
-                        } else if(req.url == `/client/${client.user.id}?news_last_update`) {
-                            let html = ``;
-                            fs.readFile(`./website/FR_fr/new_last_update.html`, 'utf8', (err, data) => {
-                                if(err) {
-                                    console.log(err)
-                                } else {
-                                    html = `${data}`
-                                    
-                                        res.writeHead(200, {
-                                            'Content-Type': 'text/html',
-                                            'Content-Length': html.length,
-                                            'Expires': new Date().toUTCString()
-                                        });
-                                         res.end(data)
-                                }
-                            })
-                        } else if(req.url == `/`) {
-						if(typeof window !== 'undefined') {
-							window.location.replace(`http://185.142.53.79:8080/client/${client.user.id}`);
-							//await alertPage()
-						}
-						} else {
-							return alertPage();
-                        }
-                    }).listen(8080)
-				}
-
-				case 'EN_en': {
-					http.createServer(function (req, res) {
-						if (req.url == `/client/${client.user.id}`) {
-						
-						} else {
-							res.end('Invalid Request!');
-						}
-					})
-					break;
-				}
-			}
 		}
     }
 }
