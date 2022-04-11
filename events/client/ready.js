@@ -211,6 +211,9 @@ module.exports = {
 			const Dashboard = require("../../dashboard/dashboard");
 			Dashboard(client)
 
+			const DiscordInformations = require('../../dashboard/App/discord-get');
+			DiscordInformations(client)
+
 			console.log(`[!] Starting server web on: http://185.142.53.79:8080/client/${client.user.id}`.bold.yellow)
 		}
     }
