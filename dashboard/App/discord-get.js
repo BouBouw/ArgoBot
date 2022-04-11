@@ -7,6 +7,7 @@ module.exports = async (client) => {
     `.bold.green)
 
     async function getInformations() {
-        
-    } 
+
+    }
+    //getInformations();
 }
