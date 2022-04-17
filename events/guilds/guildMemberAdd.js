@@ -207,6 +207,7 @@ module.exports = {
                     
                     const oldInvites = client.invites.get(member.guild.id);
                     const invite = newInvites.find(i => i.uses > oldInvites.get(i.code));
+                    if(!invite) return;
                     const inviter = client.users.cache.get(invite.inviter.id); 
                     
                     var variables = {

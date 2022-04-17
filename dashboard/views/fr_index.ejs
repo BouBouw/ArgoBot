@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!-- Last Published: Sun Jan 23 2022 20:18:00 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="" data-wf-page="61edb673f118ec096a63b2f2" data-wf-site="61edb673f118ec274563b2ee">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BundleTech • Accueil</title>
+        <meta content="Vos produits à disposition sur website ou sur Discord." name="description"/>
+        <meta property="image" content="./images/bundletech_icon.png"/>
+
+        <meta content="BundleTech" property="og:title"/>
+        <meta content="Vos produits à disposition sur website ou sur Discord." property="og:description"/>
+        <meta property="og:image" content="./images/bundletech_icon.png"/>
+
+        <meta property="og:type" content="website"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link href="./styles/css/main.css" rel="stylesheet" type="text/css"/>
+        <script src="./styles/javascript/webfont.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            WebFont.load({
+                google: {
+                    families: ["DM Sans:regular,italic,500,500italic,700,700italic"]
+                }
+            });
+        </script>
+        <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif]-->
+        <script type="text/javascript">
+            !function(o, c) {
+                var n = c.documentElement
+                  , t = " w-mod-";
+                n.className += t + "js",
+                ("ontouchstart"in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
+            }(window, document);
+        </script>
+        <link href="./images/desktop_mockup.png" rel="shortcut icon" type="image/x-icon"/>
+        <link href="./images/desktop_mockup.png" rel="apple-touch-icon"/>
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0]
+                  , j = d.createElement(s)
+                  , dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            }
+            )(window, document, 'script', 'dataLayer', 'GTM-5QK5TRZ');
+        </script>
+        <!-- End Google Tag Manager -->
+        <script type="text/javascript">
+            window.__WEBFLOW_CURRENCY_SETTINGS = {
+                "currencyCode": "USD",
+                "$init": true,
+                "symbol": "$",
+                "decimal": ".",
+                "fractionDigits": 2,
+                "group": ",",
+                "template": "{{wf {\"path\":\"symbol\",\"type\":\"PlainText\"} }} {{wf {\"path\":\"amount\",\"type\":\"CommercePrice\"} }} {{wf {\"path\":\"currencyCode\",\"type\":\"PlainText\"} }}",
+                "hideDecimalForWholeNumbers": false
+            };
+        </script>
+    </head>
+    <body>
+        <!-- Audio -->
+        <audio src="./audio/main_audio.mp3" autoplay onplay="handleFirstPlay(event)"></audio>
+        <!-- Navbar -->
+        <div class="navbar wf-section">
+            <div class="navbar-container">
+                <div class="navbar-flex">
+                    <a href="/" aria-current="page" class="nav-logo-link w-inline-block w--current">
+                        <img src="./images/bundletech_icon.png" loading="lazy" alt="" class="nav-logo"/>
+                    </a>
+                    <div class="menu-wrap">
+                        <div class="menu-ye-bg-60h">
+                            <div class="menu-grid">
+                                <a href="/subscribe" class="nav-link">Abonnements</a>
+                                <a href="/documentation" class="nav-link">Documentation</a>
+                                <a href="https://discord.gg/XjrsRsnUxe" class="nav-link">Serveur support</a>
+                            </div>
+                            <div class="abs-wrap hide-desk">
+                                <div data-w-id="ba447b2c-acf9-241a-c889-929fba06afb6" data-animation-type="lottie" data-src="https://assets.website-files.com/60765ee4e1e4934386ba13ce/60765ee4e1e4937fbcba13fe_mobilemenu.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="3.45" data-duration="0" data-ix2-initial-state="0" class="menu-lottie"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-cta-dsktp">
+                        <a href="<%= user ? `/${client.user.id}` : 'https://discord.com/api/oauth2/authorize?client_id=883405114470178856&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fdiscord%2Fcallback&response_type=code&scope=identify%20email%20guilds%20guilds.join' %>" class="btn w-button"><%= user ? user.username + '#' + user.discriminator : 'Se connecter' %></a>
+                        <a href="/en/home" class="btn w-button">English</a>
+                    </div>
+                    <a data-w-id="c1c082a7-da0c-ceba-cf2b-b99115979e0b" href="#" class="menu-btn w-inline-block">
+                        <img src="./images/bundletech_icon.png" loading="lazy" alt="" class="menu-icon"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="section-100w-100h-full rel-z-3 wf-section">
+                <div class="pg-hero-mob-pb">
+                    <div class="container">
+                        <div class="grid-row-30 _70w rel-z-2">
+                            <h1 id="w-node-_8c8e9399-c45f-7216-3873-eb5eb300a655-6a63b2f2" data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a655" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="txt-white">Le robot simple d'utilisation qui vous protège.</h1>
+                            <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a657" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="_70w">
+                                <p class="h5-heading txt-on-dark">A bas prix et mis à jour régulièrement pour assurer de nouvelles fonctionnalités.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="abs-wrap flex-hor-all-cent">
+                    <div class="abs-container flex-hor-all-cent">
+                        <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a65c" class="home-hero-cta-wrap">
+                            <div class="arrow-wrap">
+                                <img src="./images/arrow_yellow_octagon.svg" loading="lazy" alt="" class="hero-arrow home"/>
+                                <div class="arrow-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="abs-wrap">
+                    <div class="abs-container is--hero-lottie">
+                        <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a666" data-animation-type="lottie" data-src="./styles/json/hero_blink.json" data-loop="1" data-direction="1" data-autoplay="1" data-is-ix2-target="0" data-renderer="svg" data-default-duration="6" data-duration="0" class="tf-shape-lottie"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-150-150 bg-black wf-section">
+                <div class="container rel-z-2">
+                    <div class="w-layout-grid grid-row-50">
+                        <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a66a" class="w-layout-grid grid-row-30 _50w">
+                            <div class="overline">Qu'est-ce que Argo & Sona</div>
+                            <h2 style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="h3-heading">Les deux produits sont des robots Discord, assurant des services personnalisés à votre serveur.</h2>
+                            <p style="-webkit-transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="paragraph txt-on-dark">Argo | Robot personnalisable à votre manière permettant de subvenir à vos besoins (administration, administration, économie...) <br><br>Sona | Robot permettant de jouer de la musique via YouTube ou bien en radio (Skyrock, NRJ, FunRadio)</p>
+                        </div>
+                        <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a671" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
+                            <a href="/no-code" data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a672" class="btn btn-black w-button">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-150-150 overfl-hidden wf-section">
+                <div class="container rel-z-2">
+                    <div class="mob-70w">
+                        <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a677" class="w-layout-grid grid-row-30 _50w">
+                            <div class="overline txt-on-white">Les moyens de paiements</div>
+                            <h2 style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="h3-heading">Un achat rentable sur le court & long terme !</h2>
+                            <p style="-webkit-transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="paragraph txt-on-white">De nombreuses plateformes de paiements sont mises en places pour vous facilitier l'achat d'un produit.</p>
+                        </div>
+                    </div>
+                    <div class="_50w"></div>
+                    <div class="w-layout-grid grid-row-20 mt-100">
+                        <h3 data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a681" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="h5-heading">PayPal</h3>
+                        <h3 data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a683" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="h5-heading">Carte Bancaire & Virements Bancaires</h3>
+                        <h3 data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a685" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="h5-heading">MetaMask</h3>
+                    </div>
+                    <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a689" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="wrap mt-50 mb-100">
+                        <a href="/services" data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a68a" class="btn_products w-button">Voir les produits</a>
+                    </div>
+                </div>
+                <div class="mob-0pad-container rel-z-2">
+                    <div class="w-layout-grid proj-grid">
+                        <div class="ctm-proj-wrap left bg-tenten-black">
+                            <img src="" loading="lazy" alt="" class="proj-logo mb-50"/>
+                            <div class="subtitle mb-10 txt-white">A propos</div>
+                            <p class="body-small txt-on-dark mb-50">BundleTech utilise de nombreux packages NPM pour assurer une fiabilité sur votre produits et une sécurité interne contre la fuite ou perte de données.</p>
+                            <div class="overline mb-20">Modules utilisés:</div>
+                            <div class="w-layout-grid grid-2col-max-30 grid-hor-cent">
+                                <img src="https://humancoders-formations.s3.amazonaws.com/uploads/course/logo/14/thumb_formation-node-js.png" loading="lazy" width="42" alt=""/>
+                                <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" loading="lazy" width="42" alt=""/>
+                            </div>
+                        </div>
+                        <img src="./images/desktop_mockup.png" loading="lazy" sizes="(max-width: 479px) 194.03125px, (max-width: 767px) 282.140625px, (max-width: 991px) 321.75px, 681.84375px" srcset="./images/desktop_mockup.png 500w, ./images/desktop_mockup.png 615w" alt="mockup" class="proj-mockup"/>
+                    </div>
+                </div>
+                <div class="abs-wrap flex-vert-top-right-al">
+                    <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a6a5" data-animation-type="lottie" data-src="./styles/json/falling_animations_icon.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="3.25" data-duration="0" class="triangle-lottie"></div>
+                </div>
+            </div>
+            <div class="section-150-150 bg-black wf-section">
+                <div class="container">
+                    <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a6a8" class="w-layout-grid grid-row-30 _50w">
+                        <div class="overline">Le processus de création</div>
+                        <h3 style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="h3-heading">Nous vous expliquons étape par étape le processus de création d'un produit.</h3>
+                        <p style="-webkit-transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(40px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="paragraph txt-on-dark">Votre confiance est notre atout pour continuer à nous développer sur le marché</p>
+                    </div>
+                    <div class="process-wrap">
+                        <img src="https://assets.website-files.com/607e8407c40b545401a01422/607e8407c40b546a06a0145f_Process%20illustr%201%20white.svg" loading="lazy" alt="" class="process-illustr-1"/>
+                        <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a6b1" data-animation-type="lottie" data-src="https://assets.website-files.com/607e8407c40b545401a01422/607e8407c40b547c72a01478_process%20arrow%20black.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="7.55" data-duration="0" class="process-lottie"></div>
+                        <div class="w-layout-grid grid-row-100 grid-row-30-mob rel-z-2">
+                            <div class="process-block">
+                                <div class="txt-on-dark mt-10 mt-0-mob">01</div>
+                                <h4 class="h4-heading">Connexion à votre compte Discord</h4>
+                                <div class="w-layout-grid grid-row-20 mt-10 mt-0-mob grid-left-al">
+                                    <p class="txt-on-dark">Enregistrez votre compte Discord au site pour un accès simplifier à vos produits.</p>
+                                    <a href="<%= user ? `/${client.user.id}` : 'https://discord.com/api/oauth2/authorize?client_id=883405114470178856&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fdiscord%2Fcallback&response_type=code&scope=identify%20email%20guilds%20guilds.join' %>" class="btn w-button"><%= user ? user.username + '#' + user.discriminator : 'Se connecter' %></a>
+                                </div>
+                            </div>
+                            <div class="process-block">
+                                <div class="txt-on-dark mt-10 mt-0-mob">02</div>
+                                <h3 class="h4-heading">Choisir une offre</h3>
+                                <p class="txt-on-dark">Renseignez vous sur le tyoe de produit qui vous convient au mieux.</p>
+                            </div>
+                            <div class="process-block">
+                                <div class="txt-on-dark mt-10 mt-0-mob">03</div>
+                                <h3 class="h4-heading">Prise en compte de la commande</h3>
+                                <p class="txt-on-dark">BundleTech prend en compte votre commande.</p>
+                            </div>
+                            <div class="process-block">
+                                <div class="txt-on-dark mt-10 mt-0-mob">04</div>
+                                <h3 class="h4-heading">Confirmation du paiement</h3>
+                                <p class="txt-on-dark">Recevez un mail de votre achat et rejoigniez le
+                                    <a href="https://discord.gg/A4sU5NQQW7" target="_blank" class="txt-on-dark">
+                                        <strong>serveur Discord</strong>
+                                    </a>
+                                    de BundleTech.
+                                </p>
+                            </div>
+                            <div class="process-block">
+                                <div class="txt-on-dark mt-10 mt-0-mob">05</div>
+                                <h3 class="h4-heading">Construction du produit</h3>
+                                <p class="txt-on-dark">Nous mettons en marche le système de création de votre robot, cela prendra quelques instants.</p>
+                            </div>
+                            <div class="process-block">
+                                <div class="txt-on-dark mt-10 mt-0-mob">06</div>
+                                <h3 class="h4-heading">Lancement du robot</h3>
+                                <p class="txt-on-dark">Nous démarrons votre produit et profitez en avec bon usage.</p>
+                            </div>
+                            <img src="https://assets.website-files.com/607e8407c40b545401a01422/607e8407c40b545e70a0145d_Process%20illustr%202.svg" loading="lazy" alt="" class="process-illustr-2 hide-desk"/>
+                        </div>
+                    </div>
+                    <div data-w-id="3952432d-7376-cd54-380b-e7d42fbb8058" class="w-layout-grid grid-row-30 _50w">
+                        <div class="overline">Pourquoi nous choisir ?</div>
+                        <h3 style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="h3-heading">Voici tous les avantages que nous vous proposons.</h3>
+                    </div>
+                    <div class="w-layout-grid grid-3col col-80 mt-100">
+                        <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a6ed" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="w-layout-grid grid-row-20 grid-dist-top-left-al">
+                            <h4 class="h5-heading">
+                                La <span class="txt-col-yellow">confiance</span>,
+                            </h4>
+                            <p class="txt-on-dark">Avec nos clients, nous établissons un lien de confiance pour que vous soyez à l'aise lors de nos discussions avec notre équipe.</p>
+                        </div>
+                        <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a6f5" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="w-layout-grid grid-row-20">
+                            <h4 class="h5-heading">
+                                L' <span class="txt-col-yellow">évolution</span>,
+                            </h4>
+                            <p class="txt-on-dark">L'équipe de développement, fait en sorte de toujours évoluer et améliorer la capacités de vos produits.</p>
+                        </div>
+                        <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a6fd" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="w-layout-grid grid-row-20">
+                            <h4 class="h5-heading">
+                                Le <span class="txt-col-yellow">rapport Qualité / Prix</span>,
+                            </h4>
+                            <p class="txt-on-dark">Nous sommes un des offreurs de produits avec le prix le plus bas sur ce marché pour ce que l'on propose!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-0 bg-black hide wf-section">
+                <div data-delay="3000" data-animation="slide" class="testim-slider w-slider" data-autoplay="true" data-easing="ease-out-quint" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="600" data-infinite="true">
+                    <div class="abs-wrap flex-vert-center-al">
+                        <div class="testim-svg-container">
+                            <div class="testim-svg-grid">
+                                <img src="https://assets.website-files.com/607e8407c40b545401a01422/607e8407c40b542af0a0144e_yellow%20octagon.png" loading="eager" alt="" class="testim-octagon"/>
+                                <img src="https://assets.website-files.com/607e8407c40b545401a01422/607e8407c40b542af0a0144e_yellow%20octagon.png" loading="eager" alt="" class="testim-octagon"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testim-mask w-slider-mask">
+                        <div class="testim-slide w-slide">
+                            <div class="_100h flex-hor-all-cent">
+                                <div class="container">
+                                    <div data-w-id="8c8e9399-c45f-7216-3873-eb5eb300a710" style="-webkit-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(50px, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="testim-slide-wrap">
+                                        <p class="h5-heading txt-color-body-dark">
+                                            Working with Taskforce10 from the start really helped us <span class="txt-col-yellow">move at speed</span>
+                                            . Going from zero to a fast growing brand - <span class="txt-col-yellow">I don &#x27;t think you can put a price on that.</span>
+                                        </p>
+                                        <div class="w-layout-grid client-name-wrap">
+                                            <div class="client-name">Davie Wang</div>
+                                            <div class="caption">Founder &amp;CEO of Spark Nutrition</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testim-slide w-slide">
+                            <div class="_100h flex-hor-all-cent">
+                                <div class="container">
+                                    <div class="testim-slide-wrap">
+                                        <p class="h5-heading txt-color-body-dark">Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+                                        <div class="w-layout-grid client-name-wrap">
+                                            <div class="client-name">Davie Wang</div>
+                                            <div class="caption">Founder &amp;CEO of Spark Nutrition</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testim-arrow-left w-slider-arrow-left">
+                        <div class="arrow-embed w-embed">
+                            <svg width="100%" height="100%" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.7765 5.63206L32 1.55291L47.2235 5.63206L58.3681 16.7765L62.4471 32L58.3681 47.2235L47.2235 58.3681L32 62.4471L16.7765 58.3681L5.63191 47.2235L1.55291 32L5.63191 16.7765L16.7765 5.63206Z" stroke="#FFE600" stroke-width="3"/>
+                                <path d="M36 25.2483L28.583 32.5L36 39.7675L33.7166 42L24 32.5L33.7166 23L36 25.2483Z" fill="#ccffcc"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="testim-arrow-right w-slider-arrow-right">
+                        <div class="arrow-embed w-embed">
+                            <svg width="100%" height="100%" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M47.2235 58.3679L32 62.4471L16.7765 58.3679L5.63191 47.2235L1.55291 32L5.63191 16.7764L16.7764 5.63191L32 1.55291L47.2235 5.63191L58.3681 16.7764L62.4471 32L58.3681 47.2235L47.2235 58.3679Z" stroke="#FFE600" stroke-width="3"/>
+                                <path d="M27 39.7517L34.417 32.5L27 25.2325L29.2834 23L39 32.5L29.2834 42L27 39.7517Z" fill="#ccffcc"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="testim-slider-nav w-slider-nav w-round"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer wf-section">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="w-layout-grid grid-row-30 _40w rel-z-2">
+                        <div class="h3-heading">
+                            Nos ressources:
+                        </div>
+                        <div class="social-media">
+                            <div class="title-social-media">
+                                ➢ Nos réseaux sociaux:
+                            </div>
+                            <br>
+                            <div class="social">
+                                <p class="text-on-blue">
+                                    &ensp;&ensp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                    </svg>
+                                    <a href="https://twitter.com/bundle_tech" class="text">&ensp;• Twitter&ensp;&ensp;</a>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                                        <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                                    </svg>
+                                    <a href="https://discord.com/invite/XjrsRsnUxe" class="text">&ensp;• Discord&ensp;&ensp;</a>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                    </svg>
+                                    <a href="https://github.com" class="text">&ensp;• Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="legal">
+                            <div class="title-legal">
+                                ➢ Mentions légales:
+                            </div>
+                            <br>
+                            <div class="legal-privaty-policy">
+                                &ensp;&ensp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+                                  </svg>
+                                <a href="#" class="text">&ensp;• Politique de confidentialité&ensp;&ensp;</a>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+                                  </svg>
+                                <a href="#" class="text">&ensp;• Conditions d'utilisation</a>
+                            </div>
+                        </div>
+                        <div class="logo-animated">
+                            <img src="./images/bundletech_icon.png" loading="lazy" alt="" class="logo-animated-round"/>
+                        </div>
+                    </div>
+                    <div class="footer-copyr-wrap mt-100">
+                        <div id="w-node-_79c60c92-a4a7-01fc-2817-c56b6d948f3e-6d948f2a" class="copyright-txt txt-on-dark">2022 © BundleTech™. Tous les droits sont réservés.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=61edb673f118ec274563b2ee" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <script src="https://assets.website-files.com/61edb673f118ec274563b2ee/js/taskforce10web.a1e64b6bd.js" type="text/javascript"></script>
+        <!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5QK5TRZ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    </body>
+</html>

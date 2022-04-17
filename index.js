@@ -447,3 +447,5 @@ client.on('ready', async (client) => {
     }
   }
 })
+
+module.exports = client;

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BundleTech • Documentation</title>
+        <link href="./styles/css/main.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./styles/javascript/webfont.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div class="navbar wf-section">
+            <div class="navbar-container">
+                <div class="navbar-flex">
+                    <a href="/" aria-current="page" class="nav-logo-link w-inline-block w--current">
+                        <img src="./images/bundletech_icon.png" loading="lazy" alt="" class="nav-logo"/>
+                    </a>
+                    <div class="menu-wrap">
+                        <div class="menu-ye-bg-60h">
+                            <div class="menu-grid">
+                                <a href="/subscribe" class="nav-link">Abonnements</a>
+                                <a href="/documentation" class="nav-link">Documentation</a>
+                                <a href="https://discord.gg/XjrsRsnUxe" class="nav-link">Serveur support</a>
+                            </div>
+                            <div class="abs-wrap hide-desk">
+                                <div data-w-id="ba447b2c-acf9-241a-c889-929fba06afb6" data-animation-type="lottie" data-src="https://assets.website-files.com/60765ee4e1e4934386ba13ce/60765ee4e1e4937fbcba13fe_mobilemenu.json" data-loop="0" data-direction="1" data-autoplay="0" data-is-ix2-target="1" data-renderer="svg" data-default-duration="3.45" data-duration="0" data-ix2-initial-state="0" class="menu-lottie"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-cta-dsktp">
+                        <a href="<%= user ? `/${client.user.id}` : 'https://discord.com/api/oauth2/authorize?client_id=883405114470178856&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fdiscord%2Fcallback&response_type=code&scope=identify%20email%20guilds%20guilds.join' %>" class="btn w-button"><%= user ? user.username + '#' + user.discriminator : 'Se connecter' %></a>
+                        <a href="/en/home" class="btn w-button">English</a>
+                    </div>
+                    <a data-w-id="c1c082a7-da0c-ceba-cf2b-b99115979e0b" href="#" class="menu-btn w-inline-block">
+                        <img src="./images/bundletech_icon.png" loading="lazy" alt="" class="menu-icon"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="section-100w-100h-full rel-z-3 wf-section">
+                <br><br><br><br>
+                <h2 class="title-argo">Documentation • Argo</h2>
+                <br>
+                <div class="wrap-table100">
+                    <div class="table100 ver1 m-b-110">
+                        <div class="table100-head">
+                            <table>
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="cell100 column1">Nom</th>
+                                        <th class="cell100 column2">Description</th>
+                                        <th class="cell100 column3">Argument(s)</th>
+                                        <th class="cell100 column4">Permission(s)</th>
+                                        <th class="cell100 column5">Catégorie</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="table100-body js-pscroll">
+                            <table>
+                                <tbody>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">settings</td>
+                                        <td class="cell100 column2">Permet de modifier les paramètres global du robot</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Ownerlist</td>
+                                        <td class="cell100 column5">👑 Owner</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">recup</td>
+                                        <td class="cell100 column2">Permet de récupérer l'owner du robot</td>
+                                        <td class="cell100 column3">{backupCode}</td>
+                                        <td class="cell100 column4">Ownerlist</td>
+                                        <td class="cell100 column5">👑 Owner</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">transfer</td>
+                                        <td class="cell100 column2">Permet de transferer le serveur pincipal</td>
+                                        <td class="cell100 column3">{guildID}</td>
+                                        <td class="cell100 column4">Ownerlist</td>
+                                        <td class="cell100 column5">👑 Owner</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">ownerlist</td>
+                                        <td class="cell100 column2">Permet de voir la liste des owners</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Ownerlist</td>
+                                        <td class="cell100 column5">👑 Owner</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">whitelist</td>
+                                        <td class="cell100 column2">Permet de voir la liste blanche</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Ownerlist</td>
+                                        <td class="cell100 column5">👑 Owner</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">blacklist</td>
+                                        <td class="cell100 column2">Permet de voir la liste noire</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Ownerlist</td>
+                                        <td class="cell100 column5">👑 Owner</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">configuration</td>
+                                        <td class="cell100 column2">Permet de voir la sécurité</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">setup-modmail</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver les tickets-modmails</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">setup-coins</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver l'économie vocal</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">setup-logs</td>
+                                        <td class="cell100 column2">Permet de créer/modifier les salons de logs</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">setup-voices</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver les vocaux personnalisables</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">setup-welcome</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système de bienvenue</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">setup-captcha</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système de captcha</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">setup-leave</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système de départ</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">emoji</td>
+                                        <td class="cell100 column2">Permet d'ajouter/retirer un emoji du serveur</td>
+                                        <td class="cell100 column3">{customEmojis}</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">setup-counters</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver les compteurs</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">setup-presence</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le soutien des membres</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">clear</td>
+                                        <td class="cell100 column2">Permet de supprimer un nombre de messages</td>
+                                        <td class="cell100 column3">{messageCount}</td>
+                                        <td class="cell100 column4">Gérer les messages</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">kick</td>
+                                        <td class="cell100 column2">Permet d'expulser un membre du serveur</td>
+                                        <td class="cell100 column3">{user} [reason]</td>
+                                        <td class="cell100 column4">Expulser des membres</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">ban</td>
+                                        <td class="cell100 column2">Permet de bannir un membre du serveur</td>
+                                        <td class="cell100 column3">{user} [reason]</td>
+                                        <td class="cell100 column4">Bannir des membres</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">unban</td>
+                                        <td class="cell100 column2">Permet de débannir un membre du serveur</td>
+                                        <td class="cell100 column3">{userID}</td>
+                                        <td class="cell100 column4">Bannir des membres</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">mute</td>
+                                        <td class="cell100 column2">Permet de rendre muet un membre</td>
+                                        <td class="cell100 column3">{user} [reason]</td>
+                                        <td class="cell100 column4">Rendre muet des membres</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">tempmute</td>
+                                        <td class="cell100 column2">Permet de rendre muet un membre temporairement</td>
+                                        <td class="cell100 column3">{user} (time) [reason]</td>
+                                        <td class="cell100 column4">Rendre muet des membres</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">unmute</td>
+                                        <td class="cell100 column2">Permet de rendre la parole à un membre</td>
+                                        <td class="cell100 column3">{user}</td>
+                                        <td class="cell100 column4">Rendre muet des membres</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">mutelist</td>
+                                        <td class="cell100 column2">Permet de voir la liste des membres muets</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Rendre muet des membres</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">voicemove</td>
+                                        <td class="cell100 column2">Permet de déplacer des membres en vocal</td>
+                                        <td class="cell100 column3">{channelID}</td>
+                                        <td class="cell100 column4">Déplacer des membres</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">voicekick</td>
+                                        <td class="cell100 column2">Permet de déconnecter des membres en vocal</td>
+                                        <td class="cell100 column3">{channelID} || {userID}</td>
+                                        <td class="cell100 column4">Déplacer des membres</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">voicestats</td>
+                                        <td class="cell100 column2">Permet de voir les statistiques vocal du serveur</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Déplacer des membres</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">renew</td>
+                                        <td class="cell100 column2">Permet de recréer un salon</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Gérer les salons</td>
+                                        <td class="cell100 column5">🔧 Mod</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">help</td>
+                                        <td class="cell100 column2">Permet de voir la page d'aide des commandes</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">ping</td>
+                                        <td class="cell100 column2">Répond pong</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">avatar</td>
+                                        <td class="cell100 column2">Permet de voir l'image de sois-même ou un membre</td>
+                                        <td class="cell100 column3">{userID}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">say</td>
+                                        <td class="cell100 column2">Permet de répéter un texte via le robot</td>
+                                        <td class="cell100 column3">{repeatText}</td>
+                                        <td class="cell100 column4">Gérer les messages</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">embed</td>
+                                        <td class="cell100 column2">Permet de créer/éditer un embed</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Gérer les messages</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">speed</td>
+                                        <td class="cell100 column2">Permet de voir la latence du robot</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">weather</td>
+                                        <td class="cell100 column2">Permet de voir la météo dans une ville</td>
+                                        <td class="cell100 column3">{city}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">snipe</td>
+                                        <td class="cell100 column2">Permet de voir le dernier message effacer dans un salon</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">cryptocurrency</td>
+                                        <td class="cell100 column2">Permet de voir les informations d'une crypto-monnaie</td>
+                                        <td class="cell100 column3">{cryptoName}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">server-infos</td>
+                                        <td class="cell100 column2">Permet d'avoir les informations du serveur</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">roles-infos</td>
+                                        <td class="cell100 column2">Permet d'avoir les informations d'un rôle</td>
+                                        <td class="cell100 column3">{role}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">channel-infos</td>
+                                        <td class="cell100 column2">Permet d'avoir les informations d'un salon</td>
+                                        <td class="cell100 column3">{channel}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">invites</td>
+                                        <td class="cell100 column2">Permet d'avoir les informations sur ses invitations ou celles d'un membre</td>
+                                        <td class="cell100 column3">{user}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">anti-channels</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système d'anti-salons</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Whitelist</td>
+                                        <td class="cell100 column5">🔔 Protect</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">anti-roles</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système d'anti-rôles</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Whitelist</td>
+                                        <td class="cell100 column5">🔔 Protect</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">anti-spam</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système d'anti-spam</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Whitelist</td>
+                                        <td class="cell100 column5">🔔 Protect</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">anti-links</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système d'anti-liens</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Whitelist</td>
+                                        <td class="cell100 column5">🔔 Protect</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">anti-webhooks</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système d'anti-webhooks</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Whitelist</td>
+                                        <td class="cell100 column5">🔔 Protect</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">anti-joins</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système d'anti-rejoins</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Whitelist</td>
+                                        <td class="cell100 column5">🔔 Protect</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">anti-bots</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système d'anti-robots</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Whitelist</td>
+                                        <td class="cell100 column5">🔔 Protect</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">anti-updates</td>
+                                        <td class="cell100 column2">Permet d'activer/désactiver le système d'anti-changements</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Whitelist</td>
+                                        <td class="cell100 column5">🔔 Protect</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">manage-coins</td>
+                                        <td class="cell100 column2">Permet de gérer les coins d'un membre</td>
+                                        <td class="cell100 column3">{user}</td>
+                                        <td class="cell100 column4">Gérer les membres</td>
+                                        <td class="cell100 column5">🪙 Coins</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">profil</td>
+                                        <td class="cell100 column2">Permet de voir le profil de sois-même ou d'un membre</td>
+                                        <td class="cell100 column3">{user}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🪙 Coins</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">level</td>
+                                        <td class="cell100 column2">Permet de voir le niveau de sois-même ou d'un membre</td>
+                                        <td class="cell100 column3">{user}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🪙 Coins</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">balance</td>
+                                        <td class="cell100 column2">Permet de voir l'argent de sois-même ou d'un membre</td>
+                                        <td class="cell100 column3">{user}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🪙 Coins</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">leaderboard</td>
+                                        <td class="cell100 column2">Permet de voir les classements du serveur</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🪙 Coins</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">daily</td>
+                                        <td class="cell100 column2">Permet de récuperer sa récompense quotidienne</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🪙 Coins</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">slot</td>
+                                        <td class="cell100 column2">Permet de jouer au jeu des slots-machines</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🪙 Coins</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">roulette</td>
+                                        <td class="cell100 column2">Permet de jouer au jeu de la roulette</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🪙 Coins</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">giveaways</td>
+                                        <td class="cell100 column2">Permet de créer/éditer/annuler un giveaway</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Gérer les messages</td>
+                                        <td class="cell100 column5">🎉 Giveaway</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">ass</td>
+                                        <td class="cell100 column2">Permet d'avoir une image pornographique</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🔞 Nsfw</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">pussy</td>
+                                        <td class="cell100 column2">Permet d'avoir une image pornographique</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🔞 Nsfw</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">boobs</td>
+                                        <td class="cell100 column2">Permet d'avoir une image pornographique</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🔞 Nsfw</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">hentai</td>
+                                        <td class="cell100 column2">Permet d'avoir une image pornographique</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🔞 Nsfw</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">squirt</td>
+                                        <td class="cell100 column2">Permet d'avoir une image pornographique</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🔞 Nsfw</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">anal</td>
+                                        <td class="cell100 column2">Permet d'avoir une image pornographique</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🔞 Nsfw</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">porngif</td>
+                                        <td class="cell100 column2">Permet d'avoir une image pornographique</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🔞 Nsfw</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-100w-100h-full rel-z-3 wf-section">
+                <br><br><br><br>
+                <h2 class="title-argo">Documentation • Sona</h2>
+                <br>
+                <div class="wrap-table100">
+                    <div class="table100 ver1 m-b-110">
+                        <div class="table100-head">
+                            <table>
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="cell100 column1">Nom</th>
+                                        <th class="cell100 column2">Description</th>
+                                        <th class="cell100 column3">Argument(s)</th>
+                                        <th class="cell100 column4">Permission(s)</th>
+                                        <th class="cell100 column5">Catégorie</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="table100-body js-pscroll">
+                            <table>
+                                <tbody>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">owners</td>
+                                        <td class="cell100 column2">Permet de voir la liste des owners</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Ownerlist</td>
+                                        <td class="cell100 column5">👑 Owner</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">play</td>
+                                        <td class="cell100 column2">Permet de jouer une musique</td>
+                                        <td class="cell100 column3">{youtubeLink}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🎶 Music</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">pause</td>
+                                        <td class="cell100 column2">Permet de mettre en pause la musique</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🎶 Music</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">resume</td>
+                                        <td class="cell100 column2">Permet de reprendre la musique</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🎶 Music</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">queue</td>
+                                        <td class="cell100 column2">Permet de voir les musiques en liste de lecture</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🎶 Music</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">nowplaying</td>
+                                        <td class="cell100 column2">Permet de voir la musique actuelle</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🎶 Music</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">stop</td>
+                                        <td class="cell100 column2">Permet d'arreter la musique</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🎶 Music</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">playlist</td>
+                                        <td class="cell100 column2">Permet de mettre en liste de lecture une playlist</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🎶 Music</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">loop</td>
+                                        <td class="cell100 column2">Permet de répeter en boucle la liste de lecture</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🎶 Music</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">lyrics</td>
+                                        <td class="cell100 column2">Permet d'afficher les paroles de la musique actuelle</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🎶 Music</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">shuffle</td>
+                                        <td class="cell100 column2">Permet de mélanger aléatoirement la liste de lecture</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🎶 Music</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">radio</td>
+                                        <td class="cell100 column2">Permet de choisir une fréquence radio</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">📻 Radio</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">help</td>
+                                        <td class="cell100 column2">Permet de voir la page d'aide des commandes</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">ping</td>
+                                        <td class="cell100 column2">Répond pong</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">speed</td>
+                                        <td class="cell100 column2">Permet de voir la latence du robot</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-100w-100h-full rel-z-3 wf-section">
+                <h2 class="title-argo">Documentation • Crypto'Tracker</h2>
+                <br>
+                <div class="wrap-table100">
+                    <div class="table100 ver1 m-b-110">
+                        <div class="table100-head">
+                            <table>
+                                <thead>
+                                    <tr class="row100 head">
+                                        <th class="cell100 column1">Nom</th>
+                                        <th class="cell100 column2">Description</th>
+                                        <th class="cell100 column3">Argument(s)</th>
+                                        <th class="cell100 column4">Permission(s)</th>
+                                        <th class="cell100 column5">Catégorie</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                        <div class="table100-body js-pscroll">
+                            <table>
+                                <tbody>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">configuration </td>
+                                        <td class="cell100 column2">Permet de voir les crypto-monnaies actives</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">Administrateur</td>
+                                        <td class="cell100 column5">📌 Admin</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">cryptomonnaie</td>
+                                        <td class="cell100 column2">Permet d'avoir des informations sur un crypto-monnaie</td>
+                                        <td class="cell100 column3">{cryptoName}</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">🪙 Crypto</td>
+                                    </tr>
+                                    <tr class="row100 body">
+                                        <td class="cell100 column1">help</td>
+                                        <td class="cell100 column2">Permet de voir la page d'aide des commandes</td>
+                                        <td class="cell100 column3">❌</td>
+                                        <td class="cell100 column4">❌</td>
+                                        <td class="cell100 column5">💡 Misc</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer wf-section">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="w-layout-grid grid-row-30 _40w rel-z-2">
+                        <div class="h3-heading">
+                            Nos ressources:
+                        </div>
+                        <div class="social-media">
+                            <div class="title-social-media">
+                                ➢ Nos réseaux sociaux:
+                            </div>
+                            <br>
+                            <div class="social">
+                                <p class="text-on-blue">
+                                    &ensp;&ensp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                    </svg>
+                                    <a href="https://twitter.com/bundle_tech" class="text">&ensp;• Twitter&ensp;&ensp;</a>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                                        <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                                    </svg>
+                                    <a href="https://discord.com/invite/XjrsRsnUxe" class="text">&ensp;• Discord&ensp;&ensp;</a>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                                    </svg>
+                                    <a href="https://github.com" class="text">&ensp;• Github</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="legal">
+                            <div class="title-legal">
+                                ➢ Mentions légales:
+                            </div>
+                            <br>
+                            <div class="legal-privaty-policy">
+                                &ensp;&ensp;
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+                                  </svg>
+                                <a href="#" class="text">&ensp;• Politique de confidentialité&ensp;&ensp;</a>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill-check" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm2.146 5.146a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647z"/>
+                                  </svg>
+                                <a href="#" class="text">&ensp;• Conditions d'utilisation</a>
+                            </div>
+                        </div>
+                        <div class="logo-animated">
+                            <img src="./images/bundletech_icon.png" loading="lazy" alt="" class="logo-animated-round"/>
+                        </div>
+                    </div>
+                    <div class="footer-copyr-wrap mt-100">
+                        <div id="w-node-_79c60c92-a4a7-01fc-2817-c56b6d948f3e-6d948f2a" class="copyright-txt txt-on-dark">2022 © BundleTech™. Tous les droits sont réservés.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
