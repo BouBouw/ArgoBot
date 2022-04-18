@@ -22,8 +22,8 @@ router.get('/subscribe', (req, res) => {
     })
 })
 
-router.get(`/:id`, async (req, res) => {
-    if(req.params.id === client.user.id) {
+router.get(`/${req.user.id}`, async (req, res) => {
+    if(req.params.id === req.user.id) {
         return res.render('fr_index', {
             user: req.user,
             client: client,

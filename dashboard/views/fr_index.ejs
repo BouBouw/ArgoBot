@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <div class="menu-cta-dsktp">
-                        <a href="<%= user ? `/${client.user.id}` : 'https://discord.com/api/oauth2/authorize?client_id=883405114470178856&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fdiscord%2Fcallback&response_type=code&scope=identify%20email%20guilds%20guilds.join' %>" class="btn w-button"><%= user ? user.username + '#' + user.discriminator : 'Se connecter' %></a>
+                        <a href="<%= user ? `/${user.id}` : 'https://discord.com/api/oauth2/authorize?client_id=883405114470178856&redirect_uri=http%3A%2F%2Flocalhost%3A3000%2Fdiscord%2Fcallback&response_type=code&scope=identify%20email%20guilds%20guilds.join' %>" class="btn w-button"><%= user ? user.username + '#' + user.discriminator : 'Se connecter' %></a>
                         <a href="/en/home" class="btn w-button">English</a>
                     </div>
                     <a data-w-id="c1c082a7-da0c-ceba-cf2b-b99115979e0b" href="#" class="menu-btn w-inline-block">
