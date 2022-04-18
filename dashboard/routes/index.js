@@ -33,6 +33,11 @@ router.get(`/:id`, async (req, res) => {
     }
 })
 
+router.get('/logout', (req, res) => {
+    req.logout();
+    return res.render('fr_index');
+})
+
 router.get(`/UwU`, (req, res) => {
     res.sender('error', {
         user: req.user,
