@@ -7234,3 +7234,129 @@ th,td {
 .title-argo {
   color: #fff;
 }
+
+.card-container {
+  width: 280px;
+  height: 500px;
+  margin: 30px auto;
+}
+
+.card {
+  border-radius: 25px;
+  box-shadow: -11px 11px 1px rgb(191, 250, 245);
+}
+
+.card-head {
+  position: relative;
+  height: 252px;
+  background: #ccffcc;
+  /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ccffcc98 8%, #47fdf4 83%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #ccffcc98 8%, #47fdf4 83%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ccffcc98 8%, #47fdf4 83%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ccffcc98', endColorstr='#47fdf4', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  border-radius: 25px 25px 0 0;
+}
+
+.card-body {
+  height: 255px;
+  background: #fff;
+  border-radius: 0 0 25px 25px;
+}
+
+.card-title {
+  padding: 0 20px;
+  font-size: 11px;
+  display: flex;
+  top: 10%;
+  color: rgb(17, 0, 255);
+}
+
+.badge {
+  position: relative;
+  font-size: 10px;
+  font-weight: 300;
+  color: #fff;
+  background: #0ceaf1;
+  padding: 2px 5px;
+  border-radius: 4px;
+  top: 2px;
+  margin-left: 85%;
+}
+
+.product-star {
+  position: relative;
+  margin-left: 1%;
+  font-size: 10px;
+  font-weight: 300;
+  color: goldenrod;
+}
+
+.btn-time {
+  font-size: 11px;
+}
+
+.time-months {
+  margin-left: 15px;
+}
+
+.time-months li {
+  list-style: none;
+  float: left;
+  margin-right: 20px;
+}
+
+.time-months li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 11px;
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 23px;
+  color: #000;
+}
+
+.time-months li a:hover {
+  color: #019aff;
+}
+
+.time-months li a.active {
+  background: #019aff;
+  color: rgb(255, 255, 255);
+}
+
+.btn-buy {
+    position: relative;
+    padding: 0.5em 1.4em;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 10 10 auto;
+    border: 2.5px solid #000;
+    border-radius: 150px;
+    background: #ccffcc;
+    background: -moz-linear-gradient(-45deg, #ccffcc98 8%, #47fdf4 83%);
+    background: -webkit-linear-gradient(-45deg, #ccffcc98 8%, #47fdf4 83%);
+    background: linear-gradient(135deg, #ccffcc98 8%, #47fdf4 83%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ccffcc98', endColorstr='#47fdf4', GradientType=1);
+    -webkit-transition: box-shadow 200ms cubic-bezier(.23, 1, .32, 1);
+    transition: box-shadow 200ms cubic-bezier(.23, 1, .32, 1);
+    color: rgb(0, 0, 0);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    top: 20%;
+    white-space: normal;
+}
+
+.product-price {
+  position: relative;
+  left: -25%;
+  text-align: center;
+  color: #000;
+}
