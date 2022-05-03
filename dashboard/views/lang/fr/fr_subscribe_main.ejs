@@ -6,6 +6,7 @@
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <link href="./styles/css/main.css" rel="stylesheet" type="text/css"/>
         <script src="./styles/javascript/webfont.js" type="text/javascript"></script>
+        <script src="./styles/javascript/script.js"></script>
     </head>
     <body>
         <div class="navbar wf-section">
@@ -71,10 +72,10 @@
                                 <br>
                                 <h6>&ensp;Durée de l'abonnement</h6>
                                 <ul class="time-months">
-                                    <li><a href="">1</a></li>
-                                    <li><a href="">3</a></li>
-                                    <li><a href="">6</a></li>
-                                    <li><a href="" class="active">12</a></li>
+                                    <li><a href="" onclick="durationClick(1)">1</a></li>
+                                    <li><a href="" onclick="durationClick(3)">3</a></li>
+                                    <li><a href="" onclick="durationClick(6)">6</a></li>
+                                    <li><a href="" onclick="durationClick(12)">12</a></li>
                                 </ul>
                             </div>
                             <div class="btn-buy">
@@ -82,6 +83,8 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="card-container_2">
                     <div class="card">
                         <div class="card-head">
     

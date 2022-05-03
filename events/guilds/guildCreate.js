@@ -5,10 +5,9 @@ module.exports = {
     once: false,
     execute: async (guild, client) => {
         const arr = db.get(`global_settings_${client.user.id}`)
+        const bot_settings = db.get(`bot_settings_${client.user.id}`)
 
         if(guild.id !== bot_settings[3]) {
-            await guild.leave()
-                .then(async () => {
                     const dmChannel = await client.users.cache.get(bot_settings[2]);
                     switch(arr[0]) {
                         case 'FR_fr': {
@@ -35,7 +34,6 @@ module.exports = {
                             break;
                         }
                     }
-                })
         }
 
         guild.invites.fetch().then(guildInvites => {

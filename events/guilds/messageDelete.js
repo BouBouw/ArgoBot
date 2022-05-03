@@ -17,8 +17,6 @@ module.exports = {
         await snipeMessage();
 
         async function deleteMessage() {
-            if(!message.content) return;
-            if(message.content.startsWith(arr[1])) return;
             if(!logs) return;
 
             if(message.author.bot) return;

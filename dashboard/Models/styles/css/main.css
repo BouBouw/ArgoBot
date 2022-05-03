@@ -7238,7 +7238,14 @@ th,td {
 .card-container {
   width: 280px;
   height: 500px;
-  margin: 30px auto;
+  margin-left: -27%;
+}
+
+.card-container_2 {
+  width: 280px;
+  height: 500px;
+  margin-right: -20%;
+  margin-top: -26.25%;
 }
 
 .card {
@@ -7332,7 +7339,7 @@ th,td {
 }
 
 .btn-buy {
-    position: relative;
+    position: center;
     padding: 0.5em 1.4em;
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 auto;
@@ -7350,7 +7357,7 @@ th,td {
     color: rgb(0, 0, 0);
     font-size: 0.9375rem;
     font-weight: 500;
-    top: 20%;
+    top: 40%;
     white-space: normal;
 }
 

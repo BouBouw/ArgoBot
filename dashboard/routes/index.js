@@ -23,7 +23,6 @@ router.get('/subscribe', (req, res) => {
 })
 
 router.get(`/:id`, async (req, res) => {
-    console.log(req.params)
     if(req.params.id === req.user.id) {
         return res.render('fr_index', {
             user: req.user,
