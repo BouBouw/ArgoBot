@@ -7,3 +7,7 @@ async function consoleChecker() {
 function durationClick() {
   
 }
+
+async function metaMaskRequest() {
+    
+}
